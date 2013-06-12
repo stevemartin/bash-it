@@ -9,7 +9,10 @@ alias ll='ls -al'
 alias l='ls -a'
 alias l1='ls -1'
 
+alias gr='grep'
 alias _="sudo"
+
+alias zs='bundle exec zeus start'
 
 if [ $(uname) = "Linux" ]
 then
@@ -45,6 +48,7 @@ alias -- -='cd -'        # Go back
 
 # Shell History
 alias h='history'
+alias hs='history | grep'
 
 # Tree
 if [ ! -x "$(which tree 2>/dev/null)" ]
